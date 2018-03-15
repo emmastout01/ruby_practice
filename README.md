@@ -1,6 +1,7 @@
 # ruby_practice
 
 ## Here's what I'm learning in Ruby!
+I just started learning Ruby, and I'm excited to dive in. I learned that Ruby was created with programmers in mind. It's intentionally written in a way that is readable and fun to write. So, let's check out what I've learned so far!
 
 ### Variables
 Convention in Ruby is to name variables with underscores, not camelCase. 
@@ -30,4 +31,8 @@ Ex: 'Hello world'.reverse -->
 
     dlrow olleH
 
-###
+### Functions
+
+
+### If statements
+
