@@ -5,7 +5,7 @@
 ### Variables
 Convention in Ruby is to name variables with underscores, not camelCase. 
 
-Example: my_new_variable = 'Hello World!'
+Ex: my_new_variable = 'Hello World!'
 
 ### Print and Puts
 The Print command will print something to the screen.
@@ -21,3 +21,13 @@ Ex: puts 'hello world'
 
     hello world
     hello again 
+
+
+### Methods
+Since everything in Ruby is an object, variables all have built-in methods. These are similar to JavaScript methods. Some methods include .length, .reverse and .upcase.
+
+Ex: 'Hello world'.reverse -->
+
+    dlrow olleH
+
+###

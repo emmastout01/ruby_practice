@@ -4,17 +4,15 @@
 a_new_variable = 'New Variable'
 
 
-# Print and Puts
-# 
-
-# Methods
-# Since everything in Ruby is an object, variables all have built-in methods. 
 
 
-# Writing a function:
-def polar
+# Factorial function:
+# Ruby lets you write recursive functions, cool!
+def factorial(n) 
+    raise "you must enter a valid number" if n < 1
+    return 1 if n == 1
+    n * factorial(n-1)
+end
     
-
-# If statements:
 
 
