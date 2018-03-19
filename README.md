@@ -226,3 +226,30 @@ function_name(1, 2) --> Output = 3
 ```
 
 Important note: In Ruby, values are passed into functions by value. In other words, any value that changes inside of a function is not going to affect an outside value. 
+
+### Strings
+
+Most of the time we'll use double quotes to write strings, because they allow us to use interpolation (including equations/variables in our strings). Example:
+```
+friend = "Ikey"
+
+my_string = "Hey there #{friend}!" --> Output = Hey there Ikey!
+
+my_eggs = "I have #{4+8} eggs." --> Output = I have 12 eggs.
+```
+
+We can also check to see if a string contains a particular substring:
+```
+full_name = "Emma Stout"
+
+full_name.include?("Emma")
+```
+As mentioned above, strings have many built-in methods that we can use on them. We can check to see if a string starts with a particular substring, how many vowels a string has, delete whitespace, etc. 
+
+.chop will chop off the last character.
+.chomp will eliminate a new line if it exists. If there is no new line, it's going to do nothing. We can also chomp off specific last characters by writing: .chomp('ing') --> This will eliminate 'ing' from the end of the string.
+
+Bottom line: There are a whole lot of different ways you can manipulate strings in Ruby. 
+
+### Class Objects
+
