@@ -143,3 +143,45 @@ Ex: ```puts (age >=21) ? 'I'll have a cocktail' : 'I'll stick with milk'```
 
 ### Loops
 
+Ex: Write a loop that displays all even numbers 1-10.
+```
+x = 1
+
+loop do
+    x += 1
+
+    next unless (x % 2) == 0
+    puts x
+
+    break if x >= 10
+end
+```
+
+#### While Loops
+We can also achieve the same result using a while loop:
+
+```
+y = 1
+
+while y <= 10
+    y +=1
+    next unless (y % 2) == 0
+    puts y
+end
+```
+
+#### Until Loops
+Yet another way we could do this is with an 'Until Loop':
+
+```
+a = 1
+
+until a >= 10
+    a +=1    
+    next unless (a % 2) == 0
+    puts a
+end
+```
+
+#### For Loops
+
