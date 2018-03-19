@@ -253,3 +253,79 @@ Bottom line: There are a whole lot of different ways you can manipulate strings 
 
 ### Class Objects
 
+Ruby is an object-oriented language. Every object has attributes (aka instance variables) and capabilities (aka methods).
+
+Inside a class, we can create an initialize function that will be called any time a new instance of that class is created.
+```
+class Animal 
+    def initialize
+        puts "Creating a New Animal"
+    end
+```
+
+We can create 'setters' and 'getters':
+
+To set an instance variable in Ruby, add the @ symbol. Ex:
+```
+    def set_name(new_name)
+        @name = new_name
+    end
+```
+    A 'getter' will automatically return the new name:
+```
+    def get_name
+        @name
+    end
+```
+Here's another way to write a getter:
+```
+    def name 
+        @name
+    end
+```
+And another way to write a setter: 
+```
+    def name=(new_name)
+        if new_name.is_a?(Numeric)
+            puts 'Name can be a number'
+        else 
+            @name = new_name
+        end
+    end
+end
+```
+To create a new object:
+```
+cat = Animal.new
+```
+Here, we are setting the name:
+```
+cat.set_name('Ikey')
+```
+Here, we are getting the name, using our getter function 'name':
+```
+puts cat.name
+```
+But wait, there is an even easier way to create setters and getters! To create all setters and getters, we can do this:
+```
+class Dog
+    attr_accessor :name, :height, :weight
+```
+Above, we have created setter and getter functions for all instance variables we wanted to create: in this case, name, height and weight. 
+
+Moving on, here's a function within the class:
+```
+    def bark
+        return "Generic bark"
+    end 
+end
+```
+Now, we can create a new Dog:
+```
+rover = Dog.new
+
+rover.name = "Rover"
+
+puts rover.name --> Output = "Rover"
+```
+    
