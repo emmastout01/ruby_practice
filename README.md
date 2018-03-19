@@ -64,8 +64,9 @@ Finally, display the data from the file:
 ### Functions
 
 
-### If statements
+### Conditional statements
 
+#### If Statements
 If statements in Ruby look quite similar to if statement in JavaScript, with a couple of differences. The comparison operators and logical operators are the same as JavaScript, with the exception that in Ruby, if you would like you can type 'and, or, not' instead of using '&&, ||, !'. One difference is that you don't need {} around the code to execute. 
 
 Ex. in Ruby:
@@ -80,6 +81,7 @@ elsif (age >= 7) && (age <= 13)
 
 Another difference is that in Ruby, 'Else if' is written as 'elsif'.
 
+#### More comparison operators
 Another cool comparison operator Ruby supports is the <=> operator. When given two values, it will return either 1, 0, or -1. 
 
 - Returns 1 when first value is greater
@@ -102,3 +104,42 @@ unless my_age > 8
 else
     puts 'stay up later'
 ```
+
+You can also write if statements at the end of blocks of code. 
+
+Ex: 
+```
+has_cat = true
+
+puts 'Meow' if has_cat == true
+```
+
+#### Case Statements
+
+In this example the user is prompted to enter a greeting. Depending on what language they type in, they will get a different greeting.
+
+```
+print 'Enter greeting: '
+
+greeting = gets.chomp
+
+case greeting
+when 'French', 'french'
+    puts 'Bonjour'
+    exit
+when 'Spanish', 'spanish'
+    puts 'Hola'
+    exit
+else 
+    puts 'Hello'
+end
+```
+
+#### Ternary Operator
+
+Provides different input depending on a condition. This is also available in JavaScript.
+
+Ex: ```puts (age >=21) ? 'I'll have a cocktail' : 'I'll stick with milk'```
+
+### Loops
+
