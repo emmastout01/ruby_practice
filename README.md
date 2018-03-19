@@ -333,8 +333,9 @@ puts rover.name --> Output = "Rover"
 
 Whenever we inherit from another class, our new class gets all of the methods and instance variables from the parent class.
 
-Let's create another class to demonstrate this. We can either inherit things, or also overwrite them. Here, let's overwrite our 'bark' method:
+Let's create another class to demonstrate this. To inherit a class: newClass < parentClass. We can either inherit methods from the parent class, or also overwrite them. Here, let's overwrite our 'bark' method:
 
+```
 class Sheltie < Dog 
     def bark 
         return "Woof Woof"
@@ -343,14 +344,14 @@ end
 
 tiny_dog = Sheltie.new
 tiny_dog.name = "Tiny Dog"
-
+```
 printf allows us to do formatted printing to the screen. 
-
+```
 printf "%s goes %s", tiny_dog.name, tiny_dog.bark()
-
+```
 Above, %s represents 'string'
 
-### Modules
+#### Modules
 
 Modules are also made up of methods and instance variables, like classes, but they can't be instantiated. In other words, they can't be turned into an object that we could use. But they CAN be inherited by classes. So, we use them to allow classes to inherit things, because classes can inherit multiple modules. 
 
@@ -374,4 +375,5 @@ class Athlete
 ```
 If we want our module will supercede the class, we will use 'prepend' instead of 'include'. This means that even if our new class has the same method as a module, the module's method rules. 
 
-    
+
+ 
