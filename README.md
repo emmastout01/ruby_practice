@@ -4,7 +4,6 @@
 I just started learning Ruby, and I'm excited to dive in. I learned that Ruby was created with programmers in mind. It's intentionally written in a way that is readable and fun to write. So, let's check out what I've learned so far!
 
 Many of my notes were taken while watching Derek Banas' very helpful tutorial, [Ruby Programming](https://www.youtube.com/watch?v=Dji9ALCgfpM). I highly recommend it to anyone who wants to learn the basics of Ruby. 
-https://www.youtube.com/watch?v=Dji9ALCgfpM 
 
 ### Variables
 Convention in Ruby is to name variables with underscores, not camelCase. Start variables with a lowercase letter.
