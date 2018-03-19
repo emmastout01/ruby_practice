@@ -3,6 +3,9 @@
 ## Here's what I'm learning in Ruby!
 I just started learning Ruby, and I'm excited to dive in. I learned that Ruby was created with programmers in mind. It's intentionally written in a way that is readable and fun to write. So, let's check out what I've learned so far!
 
+Many of my notes were taken while watching Derek Banas' very helpful tutorial, Ruby Programming. I highly recommend it to anyone who wants to learn the basics of Ruby. 
+https://www.youtube.com/watch?v=Dji9ALCgfpM 
+
 ### Variables
 Convention in Ruby is to name variables with underscores, not camelCase. Start variables with a lowercase letter.
 
@@ -59,9 +62,6 @@ Finally, display the data from the file:
 ```data_from_file = File.read('newFile.out')```
 
 ```puts 'Data from file: ' + data_from_file```
-
-
-### Functions
 
 
 ### Conditional statements
@@ -185,3 +185,44 @@ end
 
 #### For Loops
 
+If we want to cycle through all of the items in an array, we can do so using a for loop: 
+```
+numbers = [1, 2, 3, 4, 5]
+
+for number in numbers 
+    puts "#{number}, "
+end
+```
+This will loop through our array, 'numbers', and create a temporary variable 'number' that each item in our array will be stored in. It will print each of the numbers on the screen. (The syntax #{number} allows us to print the value of each array item.)
+
+Another way to write a loop: 
+```
+pets = [Ikey, Snowball, Rex, Fluffy]
+
+pets.each do | pet |
+    puts 'Be sure to snuggle with #{pet} today!"
+end
+```
+
+#### Ranges
+
+This is the same loop we wrote above, except we declare the number range of our loop within the range. For example, if we want to output numbers 1-5, we can write:
+```
+(1..5).each do |i|  
+    puts "#{i}"
+end
+```
+
+### Functions
+
+To declare a function, we start with 'def'. Here's the basic structure of a function in Ruby:
+
+```
+def function_name(parameter1, parameter2)
+    return parameter1 + parameter2
+end
+
+function_name(1, 2) --> Output = 3
+```
+
+Important note: In Ruby, values are passed into functions by value. In other words, any value that changes inside of a function is not going to affect an outside value. 
