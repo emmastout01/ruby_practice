@@ -194,6 +194,18 @@ end
 ```
 This will loop through our array, 'numbers', and create a temporary variable 'number' that each item in our array will be stored in. It will print each of the numbers on the screen. (The syntax #{number} allows us to print the value of each array item.)
 
+If we want to loop through and print all the numbers 1-10, including 10, we write:
+
+for num in 1..10
+    puts num
+end
+
+And if we want to loop through and print those numbers, not including 10, we write:
+
+for num in 1...10
+    puts num
+end
+
 Another way to write a loop: 
 ```
 pets = [Ikey, Snowball, Rex, Fluffy]
